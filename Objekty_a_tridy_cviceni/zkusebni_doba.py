@@ -1,10 +1,12 @@
+# Zkušební doba
+
 class Employee:
-    def __init__(self, name, position, holiday_entitlement, probation_period):
+    def __init__(self, name, position, holiday_entitlement, probation_period): # přidání atributu probation_period
         self.name = name
         self.position = position
         self.holiday_entitlement = holiday_entitlement
-        self.probation_period = probation_period
-    def __str__(self):
+        self.probation_period = probation_period # nesmíme ho zapomenout přidat i sem
+    def __str__(self): #upravení metody __str__ na zjištění, zda je zaměstnanec ještě ve zkušební době
         if self.probation_period == True:
             return f"Zaměstnanec {self.name} pracuje na pozici {self.position} a je ve zkušební době."
         else:

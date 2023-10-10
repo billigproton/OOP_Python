@@ -7,11 +7,11 @@ class Package:
         self.weight = weight
         self.state = state
 
-    def __str__(self):
+    def __str__(self): # přejmenování metody get_info() na __str__
 
         return f"Balík na adresu {self.address} má hmotnost {self.weight} kg, je ve stavu {self.state}"
     
-    def deliver(self):
+    def deliver(self): # metoda deliver
         if self.state == "doručen":
             print(f"Balík již byl doručen")
         
